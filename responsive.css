@@ -1,0 +1,135 @@
+/* moible */
+@media (max-width: 739px) {
+    .header__navbar-item {
+        padding: 15px 0;
+    }
+
+    #container {
+        padding-top: 0%;
+        height: 750px;
+    }
+
+    .home__content{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .home__item {
+        font-size: 1.8rem;
+    }
+
+    .home__check,
+    .home__note {
+        margin: 0 10px;
+        max-width: 100%;
+    }
+
+    .home__btn,
+    .home__input {
+        flex-wrap: wrap;
+    }
+
+    .home__input-item{
+        margin: 20px 12px 0;
+    }
+
+    .home__input {
+        margin: 10px;
+    }
+
+    .home__btn{
+        margin-top: 30px;
+    }
+
+    .type-heading {
+        max-width: 90%;
+    }
+
+    .type__content-img {
+        order: 1;
+    }
+
+    .type__content-1 {
+        order: 2;
+    }
+
+    .footer__help {
+        padding: 0;
+    }
+
+    .footer__help-item {
+        padding: 10px 0;
+        flex-direction: column
+    }
+}
+
+/* talet */
+@media (max-width: 1112px){
+    .header__navbar-list {
+        width: 40%;
+        text-align: start;
+        display: block;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        background-color: var(--color);
+        transform: translateX(100%);
+        transition: transform linear 0.2s, opacity linear 0.2s;
+    }
+
+    #nav__mobile:checked ~ .header__navbar-list {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .header__navbar-item {
+        width: 100%;
+        padding: 16px 0;
+        height: auto;
+    }
+    
+    .header__navbar-link {
+        padding: 10px 0;
+        max-width: 100%;
+    }
+
+    .mobile__menu-btn {
+        display: block;
+        height: auto;
+    }
+
+    .mobile__close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .mobile__close-icon {
+        font-size: 2.4rem;
+    }
+
+    #container {
+        padding-top: 100%;
+    }
+
+    .type__content-img {
+        flex: 1;
+    }
+
+    .footer__help {
+        padding: 0;
+    }
+
+    .footer__help-item {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 200px;
+    }
+}
